@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+html,body{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(63, 62, 62);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#game{
+    width: 85vw;
+    height: 80vh;
+    border-radius: 10px;
+    overflow: hidden;
+}
+#head{
+    height: 13%;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5vw;
+}
+#hitVal,#timeVal,#scoreVal,#lifeVal{
+    height: 3vw;
+    width: 3vw;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2px;
+    font-size: 15px;
+    font-weight: 700;
+}
+#hit,#time,#score,#life{
+    display: flex;
+    align-items: center;
+    gap: 2vw;
+    font-size: 0.9vw;
+}
+#bubbleHolder{
+    height: 87%;
+    background-color: rgb(255, 255, 255);
+    padding: 1vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1vw;
+    flex-wrap: wrap;
+    
+}
+.bubble{
+    height: 5vw;
+    width: 5vw;
+    border-radius: 50%;
+    background-color: rgb(35, 35, 35);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+}
+.bubble:hover{
+    background-color: black;
+    scale: 1.1;
+    font-size: 20px;
+    font-weight: 900;
+    cursor: pointer;
+}
+span{
+    text-align: center;
+}
+@media (max-width: 850px) {
+    .bubble{
+        height: 5vw;
+        width: 5vw;
+    }
+    #head{
+        height: 10%;
+    }
+    #hitVal,#timeVal,#scoreVal,#lifeVal{
+        height: 5vw;
+        width: 5vw;
+        font-size: 2.7vw;
+    }
+    #hit,#time,#score{
+        font-size: 1.9vw;
+    }
+}
+@media (max-width: 500px) {
+    #head{
+        height: 10%;
+    }
+    #hitVal,#timeVal,#scoreVal,#lifeVal{
+        height: 5vw;
+        width: 5vw;
+        font-size: 2.7vw;
+    }
+    #hit,#time,#score{
+        font-size: 1.9vw;
+        gap: 3vw;
+    }
+}
+@media (max-width: 360px){
+    .bubble{
+        height: 9vw;
+        width: 9vw;
+    }
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    font-size: 17px;
+}
+button:hover{
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    font-weight: 900;
+}
